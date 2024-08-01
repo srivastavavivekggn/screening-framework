@@ -1,0 +1,49 @@
+{
+  "name": "ava",
+  "version": "1.0.0",
+  "description": "New assessment platform POC",
+  "scripts": {
+    "start": "node src",
+    "test": "NODE_ENV=test mocha --exit | grep -v sourceip | grep -v level"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srivastavavivekggn/ava-framework.git"
+  },
+  "author": "Vivek Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srivastavavivekggn/ava-framework/issues"
+  },
+  "homepage": "https://github.com/srivastavavivekggn/ava-framework#readme",
+  "dependencies": {
+    "@cache-manager": "^1.1.1",
+    "@express-rest": "^1.4.0",
+    "@srivastavavivekggn/healthcheck": "^1.0.3",
+    "@mongo": "^1.3.2",
+    "@prometheus-client": "^3.1.1",
+    "@request": "^1.0.3",
+    "@srivastavavivekggn/request-local-context": "^1.0.1",
+    "@srivastavavivekggn/sso-client": "^1.0.1",
+    "ajv": "^5.2.2",
+    "async": "^2.6.1",
+    "aws-sdk": "^2.263.1",
+    "axios": "^0.18.0",
+    "bunyan": "^1.8.12",
+    "chai-json-equal": "0.0.1",
+    "config": "^1.26.2",
+    "convert-units": "^2.3.4",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.13",
+    "swagger-jsdoc": "^3.2.7",
+    "swagger-ui-express": "^2.0.4",
+    "uuid": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^5.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}

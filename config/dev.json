@@ -1,0 +1,33 @@
+{
+  "route": {
+    "scheme": "http",
+    "host": "localhost:3000",
+    "path": "/screening"
+  },
+  "bind": {
+    "name": "screening_3000",
+    "port": "3000",
+    "threads": 4
+  },
+  "sso": {
+    "host": "https://<ssoUrl>",
+    "id": "localhost",
+    "secret": "test"
+  },
+  "health_profile": {
+    "host": "https://<health-profile-url>"
+  },
+  "aws": {
+    "sns": {
+      "credentials": {
+        "aws_access_key_id": "<aws_access_key_id>",
+        "aws_secret_access_key": "<aws_secret_access_key>",
+        "maxRetries": 3
+      },
+      "application_arn": "arn:aws:sns:us-east-1:303285016430:dev-",
+      "sns_region": "us-east-1",
+      "sc_topic_prefix": "dev-"
+    }
+  },
+  "mongoUrl": "mongodb://localhost:27017/screening"
+}
